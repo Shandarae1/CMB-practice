@@ -1,17 +1,81 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #d79484;/*rose gold*/
+  --secondary-color:#b8b5ba;/*light grey*/
+  --accent1-color: #f2baba;/*blush*/
+  --accent2-color: #686762;/*dark grey*/
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Alice', serif;
+  --paragraph-font: 'Barlow Semi Condensed', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #d79484;  /* headlines on a white background */ 
+  --headline-color-on-color: #f2baba; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #b8b5ba; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #f2baba; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #686762;
+  --nav-link-color: #686762;
+  --nav-background-color: white;
+  --nav-hover-link-color: #f2baba;
+  --nav-hover-background-color: #686762;
+}
+
+img{
+  max-width: 100%;
+}
 body {
+  max-width: 940px;
+  margin: 0 auto;
   background-color: white;
-  font-family: "Open Sans", sans-serif;
-  padding: 5px 25px;
-  font-size: 18px;
-  margin: 0;
-  color: #444;
+  padding: 1em;
+  font-family: var(--paragraph-font);
 }
 
-h1 {
-  font-family: "Merriweather", serif;
-  font-size: 32px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
 }
+p{
+  color: var(--paragraph-color-on-white);
+  font-family: var(--paragraph-font);
+}
+nav a{
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-family: var(--paragraph-font);
+}
+nav ul{
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+}
+nav a:hover{
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+.banner-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+.banner-img{
+  grid-column: 1/4;
+}
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(5, 200px);
+  align-items: center;
+}
+.form{
+  grid-column: 2/4;
+  grid-row: 5/6;
+}
+
+
