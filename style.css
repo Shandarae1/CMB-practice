@@ -44,33 +44,45 @@ p{
   color: var(--paragraph-color-on-white);
   font-family: var(--paragraph-font);
 }
-nav a{
+.footer{
+  color: var(--paragraph-color-on-white);
+}
+.navbar{
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.navbar a{
+  align-items: center;
   color: var(--nav-link-color);
   text-decoration: none;
   font-family: var(--paragraph-font);
 }
-nav ul{
-  list-style: none;
-  margin: 0;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-}
-nav a:hover{
+.navbar a:hover{
   color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
+  }
+ .home{
+  text-align: center;
+ }
+ .customize{
+  text-align: center;
+ }
 .banner-box{
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr
 }
 .banner-img{
   grid-column: 1/4;
+  width: 100%;
+  z-index: -1;
 }
 .home-grid{
   display: grid;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(5, 200px);
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, auto-fit);
   align-items: center;
 }
 .form{
