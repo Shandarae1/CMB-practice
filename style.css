@@ -85,6 +85,9 @@ p{
   grid-template-rows: repeat(5, auto-fit);
   align-items: center;
 }
+.productimage{
+  grid-column: 2/3;
+}
 .form{
   grid-column: 2/4;
   grid-row: 5/6;
