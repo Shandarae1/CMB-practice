@@ -44,9 +44,7 @@ p{
   color: var(--paragraph-color-on-white);
   font-family: var(--paragraph-font);
 }
-.footer{
-  color: var(--paragraph-color-on-white);
-}
+
 .navbar{
   overflow: hidden;
   display: grid;
@@ -104,5 +102,9 @@ p{
 }
 .checkbox{
   background-color: var(--paragraph-color-on-white);
+}
+.footer{
+  color: var(--paragraph-color-on-white);
+  padding: 50px;
 }
 
