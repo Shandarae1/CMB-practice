@@ -103,8 +103,26 @@ p{
 .checkbox{
   background-color: var(--paragraph-color-on-white);
 }
+.cart{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+.keepshopping{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.familypic{
+  border: 5px solid #686762;
+  box-shadow: 5px 5px 5px 0px #b8b5ba;
+}
+.family{
+  grid-column: 2/3;
+  padding: 20px;
+}
 .footer{
   color: var(--paragraph-color-on-white);
-  padding: 50px;
+  padding: 50px 50px 50px 10px;
 }
 
