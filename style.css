@@ -5,7 +5,7 @@
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #d79484;/*rose gold*/
-  --secondary-color:#b8b5ba;/*light grey*/
+  --secondary-color:#8EBAB0;/*sheen green*/
   --accent1-color: #f2baba;/*blush*/
   --accent2-color: #686762;/*dark grey*/
 
@@ -14,9 +14,9 @@
   --paragraph-font: 'Barlow Semi Condensed', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #d79484;  /* headlines on a white background */ 
+  --headline-color-on-white: #8EBAB0;  /* headlines on a white background */ 
   --headline-color-on-color: #f2baba; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #b8b5ba; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #686762; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #f2baba; /* paragraph text on a colored background */ 
   --paragraph-background-color: #686762;
   --nav-link-color: #686762;
@@ -92,13 +92,15 @@ p{
 }
 .button{
   font-family: var(--paragraph-font);
-  background-color: var(--headline-color-on-color);
+  background-color: var(--headline-color-on-white);
   color:var(--nav-link-color);
   padding:5px;
   font-size: 1.2em;
+  outline: none;
 }
 .button:hover{
-  background-color: var(--paragraph-color-on-white);
+  background-color: var(--headline-color-on-color);
+  color: white;
 }
 .checkbox{
   background-color: var(--paragraph-color-on-white);
@@ -114,7 +116,7 @@ p{
   grid-row: 2/3;
 }
 .familypic{
-  border: 5px solid #686762;
+  border: 5px solid #8EBAB0;
   box-shadow: 5px 5px 5px 0px #b8b5ba;
 }
 .family{
